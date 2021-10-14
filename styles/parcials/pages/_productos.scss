@@ -1,0 +1,37 @@
+                   /* PAGE PRODUCTOS */
+   
+                   .pagina-productos{
+                    display: grid;
+                    margin: 20px 40px;
+                 }
+              
+                 .cama-perros{
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    gap: 1rem;
+                    margin: 20px 40px;
+                 }
+                 
+                 .productos{
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid black;
+                    justify-content: space-between;
+                    align-items: center;
+                 }
+              
+              
+                 .productos img{
+                    width: 150px;
+                 }
+              
+                 /*PRODUCTOS PARA GATOS*/
+              
+                 .productos1{
+                    display: grid;
+                    margin: 20px 40px;
+                 }
+              
+                 .productos1 p{
+                    margin: 20px 40px;
+                 }

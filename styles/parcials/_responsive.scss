@@ -1,0 +1,176 @@
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width:425px){
+    header{
+       display: inline-block;
+       position: fixed;
+       border-bottom: 2px solid black;
+ }
+ 
+   header nav{
+      display: inline-block;
+   }
+ 
+   header nav ul{
+      display: flex;
+      font-size: 13px;
+   }
+    
+   header .carrito{
+      display: inline; 
+   }
+   .buscador{
+      display:flex;
+      flex-flow: row;
+      justify-content: end;
+      margin-bottom: 1rem;
+   }
+ 
+   /*HERO SECTION*/
+ 
+   .hero-section{
+      display: flex;
+      flex-direction: column;
+      margin: 0px 40px;
+      align-items: center;
+   }
+ 
+   .hero-section1{
+      display: flex;
+      flex-flow: column;
+      margin: 0px 40px;
+      align-items: center;
+      margin-top: 55px;
+      margin-bottom: 50px;
+   }
+ 
+   .hero-section1 h1{
+      font-size: 58px;
+      margin: 0px 40px;
+      text-align: center;
+   }
+ 
+    .hero-section1 img{
+       width: 370px;
+       margin-top: 50px;
+    }
+ 
+    .hero-section1 a{
+       margin: 0px 40px;
+    }
+ 
+    .hero-section1 p{
+       margin-bottom: 1rem;
+       text-align: center;
+    }
+ 
+    /*SHOP SECTION*/
+    .shop-section{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .otros-productos{
+       display: flex;
+       flex-direction: column;
+    }
+ 
+       /*FOOTER*/
+ 
+    footer p{
+    font-size: 15px;
+    text-align: center;
+    }
+ 
+ 
+ }
+ 
+ @media screen and (max-width: 768px){
+ 
+    header div a{
+       font-size: 17px;
+    }
+ 
+ 
+    header nav {
+       display: inline-block;
+    }
+    
+    
+   header nav{
+    display: inline-block;
+ }
+ 
+ header nav ul{
+    display: flex;
+    font-size: 11px;
+ }
+  
+ header .carrito{
+    display: inline; 
+ }
+ .buscador{
+    display:flex;
+    flex-flow: row;
+    justify-content: end;
+    margin-bottom: 1rem;
+ }
+ 
+ /*HERO SECTION*/
+ 
+ .hero-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+    align-items: center;
+ }
+ 
+ .hero-section1{
+    display: flex;
+    flex-flow: column;
+    margin: 0px 40px;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 50px;
+ }
+ 
+ .hero-section1 h1{
+    font-size: 58px;
+    margin: 0px 40px;
+    text-align: center;
+ }
+ 
+  .hero-section1 img{
+     width: 370px;
+     margin-top: 50px;
+  }
+ 
+  .hero-section1 a{
+     margin: 0px 40px;
+  }
+ 
+  .hero-section1 p{
+     margin-bottom: 1rem;
+     text-align: center;
+  }
+ 
+  /*SHOP SECTION*/
+  .shop-section{
+      display: flex;
+      flex-direction: column;
+  }
+ 
+  .otros-productos{
+     display: flex;
+     flex-direction: column;
+  }
+ 
+     /*FOOTER*/
+ 
+  footer p{
+  font-size: 15px;
+  text-align: center;
+  }
+ 
+ }

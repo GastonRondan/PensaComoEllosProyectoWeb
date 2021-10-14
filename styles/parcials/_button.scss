@@ -1,0 +1,22 @@
+/*boton de compra*/
+
+.button1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       .button1__button {  
+          background-color: rgb(156, 87, 221);
+          font-family: 'Poppins', sans-serif;
+          font-weight:bold;
+          -webkit-transition-duration: 0.4s; 
+          transition-duration: 0.4s;
+          font-size: 15px;
+          border-radius: 5px;
+          padding: 8px;
+          color: rgb(0, 0, 0);
+    }
+    .button1__button:hover {  
+       color: rgb(0, 0, 0);
+       transform: scale(1.1);
+    }
+ }
