@@ -18,15 +18,19 @@
    }
     
    header .carrito{
-      display: inline; 
+      display: none; 
    }
-   .buscador{
-      display:flex;
-      flex-flow: row;
-      justify-content: end;
-      margin-bottom: 1rem;
+   .header{
+      .header__buscador{
+         display:none;
+      }
    }
- 
+      .hero-section1 h1{
+         font-size: 18px;
+         margin: 0px 40px;
+         text-align: center;
+      }
+
    /*HERO SECTION*/
  
    .hero-section{
@@ -50,6 +54,20 @@
       margin: 0px 40px;
       text-align: center;
    }
+   header .carrito{
+      display: none; 
+   }
+
+   .h2shop{
+      text-align: center;
+      border-top: none;
+      margin-top: 20px;
+      border: solid steelblue;
+      border-radius: 12px;
+      background: rgb(100, 200, 150);
+      font-size: 0rem;
+   }
+   
  
     .hero-section1 img{
        width: 370px;
@@ -82,9 +100,22 @@
     font-size: 15px;
     text-align: center;
     }
+
+    /*Page Productos*/
  
- 
+  .pagina-productos{
+   display: grid;
+   margin: 20px 40px;
+}
+
+.cama-perros{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
  }
+
+
+
  
  @media screen and (max-width: 768px){
  
@@ -110,21 +141,24 @@
  header .carrito{
     display: inline; 
  }
- .buscador{
-    display:flex;
-    flex-flow: row;
-    justify-content: end;
-    margin-bottom: 1rem;
- }
+ .header{
+    .header__buscador{
+       display:none;
+    }
+   }
  
  /*HERO SECTION*/
  
  .hero-section{
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 0px 40px;
     align-items: center;
- }
+       img{
+         width: 0px;
+    }
+
+   }
  
  .hero-section1{
     display: flex;
@@ -140,11 +174,16 @@
     margin: 0px 40px;
     text-align: center;
  }
+
+ .h2shop{
+    text-align: center;
+    border-top: none;
+    border: solid steelblue;
+    border-radius: 12px;
+    background: rgb(100, 200, 150);
+    font-size: 3rem;
+ }
  
-  .hero-section1 img{
-     width: 370px;
-     margin-top: 50px;
-  }
  
   .hero-section1 a{
      margin: 0px 40px;
@@ -171,6 +210,36 @@
   footer p{
   font-size: 15px;
   text-align: center;
+  padding: 2px;
   }
+  
+  /*Page Productos*/
  
+  .pagina-productos{
+    display: grid;
+    margin: 20px 40px;
  }
+ 
+ .cama-perros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+ 
+ /*Page muestrario*/
+
+ .materiales{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+  
+ /*Page ubicación*/
+ .ubicacion1 h1{
+   font-size: 3rem;
+   text-align: center;
+   justify-content: center;
+}
+
+.ubicacion1 img{
+   width: 250px;
+}
+}

@@ -7,7 +7,7 @@
 @import "./parcials/header";
 @import "./parcials/footer";
 @import "./parcials/button";
-@import "./parcials/responsive";
+@import "./parcials/mediaqueries";
 
 * {
     margin: 0px;
@@ -27,6 +27,7 @@ h2{
    padding: 20px 0px;
    border-top: 2px solid black;
 }
+
 
 h3{
    font-size: 21px;
