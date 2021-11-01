@@ -6,83 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nuestro muestrario. Algunos materiales utilizados en nuestros productos.">
     <meta name="keywords" content="CAMAS, PERROS, GATOS, MASCOTAS, PENSA COMO ELLOS, ARGENTINA, CAMAS PARA GATOS, CAMAS PARA PERROS, PRODUCTOS PARA MASCOTAS, MUESTRARIO, POLAR NARANJA, TELAS, TELA ANTIDESGARRO, TELA IMPERMEABLE, PIEL SINTÉTICA">
+     <!--BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Muestrario - Pensá como ellos</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
   <!-- ENCABEZADO -->
-  <header class="header">
-    <div class="header__logo">
-      <a href="../index.html"> PENSÁ COMO ELLOS</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Pensá como ellos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarNavDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="productos.html">Perros</a></li>
+              <li><a class="dropdown-item" href="productos.html">Gatos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="muestrario.html">Muestrario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
     </div>
-    <nav class="header__nav" id="navegacion">
-      <ul class="header__list">
-        <li class="header__item"><a href="productos.html">PRODUCTOS</a>
-          <ul class="header__sublist">
-          <li class="header__subitem"><a class="header__a" href="./pages/productos.html">PERROS</a></li>
-          <li class="header__subitem"><a class="header__a" href="">GATOS</a></li>
-          </ul>
-        </li>
-        <li class="header__item"><a href="muestrario.html">MUESTRARIO</a></li>
-        <li class="header__item"><a href="ubicacion.html">UBICACIÓN</a></li>
-        <li class="header__item"><a href="contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-    <div class="header__buscador">
-     <input type="search" placeholder="Buscar productos">
-     <button class="header__buscador-boton" type="submit"><img src="../assets/search.svg" alt=""></button>
-    </div>
-   <div class="header__carrito">
-      <a href="#">
-          <img src="../assets/carrito.png" alt="mi carrito">
-      </a>
-   </div>
- </header> 
-    <h1 class="pagina-muestrario"> ALGUNOS DE LOS MATERIALES QUE UTILIZAMOS:</h1>
-    <section class="materiales">
-            <div class="materiales1">
-                <h1>Polar naranja</h1>
-                <img src="../assets/polar-naranja.jpg" alt="polar-naranja">
-            </div>
-            <div class="materiales1">
-                <h1>Tela antidesgarro</h1>
-                <img src="../assets/tela-antidesgarro.jpg" alt="tela-antidesgarro">
-            </div>
-            <div class="materiales1">
-                <h1>Tela impermeable</h1>
-                <img src="../assets/tela-impermeable.jpg" alt="tela-impermeable"> 
-            </div>
-            <div class="materiales1">
-                <h1>Piel sintética</h1>
-                <img src="../assets/piel-sintetica.jpg" alt="piel-sintetica">
-            </div>
-           </section>
-    </section>
+      <button type="button" class="btn btn-outline-primary"><img class="img-fluid" src="../assets/carrito.png" alt=""></button>
+  </nav>
+  <!--MUESTRARIO-->
+  <h1 class="titulo-muestrario"> ALGUNOS DE LOS MATERIALES QUE UTILIZAMOS</h1>
+ <section class="muestrario-section">
+   <article class="muestrario">
+       <img src="../assets/polar-naranja.jpg" alt="polar-naranja">
+       <div class="capa">
+       <h3>Polar naranja</h3>
+       </article>
+   <article class="muestrario">
+        <img src="../assets/tela-antidesgarro.jpg" alt="tela-antidesgarro">
+        <div class="capa">
+        <h3>Tela antidesgarro</h3>
+      </article>
+   <article class="muestrario">
+        <img src="../assets/tela-impermeable.jpg" alt="tela-impermeable">
+        <div class="capa">
+        <h3>Tela impermeable</h3>
+      </article>
+   <article class="muestrario">
+        <img src="../assets/piel-sintetica.jpg" alt="piel-sintetica">
+        <div class="capa">
+        <h3>Piel sintética</h3>
+    </article>
+  </section>
+   
 <!--FOOTER-->
 <footer class="footer">
-  <article class="footer__article">
-   <div>
-     <p>Buscanos en nuestras redes</p>
-     <div>
-     <a href="#"><img src="../assets/facebook.png" alt="">Pensá como ellos FB</a>
-   </div>
-    <div><a href="#"><img src="../assets/instagram.png" alt="">@pensacomoellos</a></div>
-   </div>
-   <div> 
-    <p>Contactate con nosotros!</p>
-     <div>
-     <a href="#"><img src="../assets/gmail.png" alt="">pensacomoellos@gmail.com</a>
-    </div>
-    <div><a href="#"><img src="../assets/whatsapp.png" alt="">+54 1122625845</a>
-    </div>
-   </div>
-  </article>
-<article class="footer__article1">
- <div class="footer__div1">
-   <p><b>Pensá como ellos (2021) // Todos los derechos reservados. Argentina
-   </b></p>
- </div>
-</article>
-</footer>   
+  <div class="footer-content">
+      <h3>Gracias por visitarnos!</h3>
+      <p>Si tienes preguntas para hacernos puedes escribirnos a nuestra casilla de e-mail o puedes comunicarte a través de Whatsapp. <br>También puedes seguirnos en nuestras redes sociales. <br> </p>
+      <ul class="socials">
+          <li><a href="#"><img src="/assets/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="/assets/instagram.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="/assets/gmail.png" alt="gmail"></a></li>
+          <li><a href="#"><img src="/assets/whatsapp.png" alt="whatsapp"></a></li>
+          <li><a href="#"> <img src="/assets/linkedin.png" alt="linkedin"></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy;2021 pensaComoEllos. designed by <span> @gastonnrondan</span></p>
+  </div>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
 </body>
 </html>

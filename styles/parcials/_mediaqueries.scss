@@ -2,87 +2,42 @@
 
 
 @media screen and (max-width:425px){
-    header{
-       display: inline-block;
-       position: fixed;
-       border-bottom: 2px solid black;
- }
- 
-   header nav{
-      display: inline-block;
-   }
- 
-   header nav ul{
-      display: flex;
-      font-size: 13px;
-   }
-    
-   header .carrito{
-      display: none; 
-   }
-   .header{
-      .header__buscador{
-         display:none;
-      }
-   }
-      .hero-section1 h1{
-         font-size: 18px;
-         margin: 0px 40px;
-         text-align: center;
-      }
-
-   /*HERO SECTION*/
- 
-   .hero-section{
-      display: flex;
-      flex-direction: column;
-      margin: 0px 40px;
-      align-items: center;
-   }
- 
-   .hero-section1{
-      display: flex;
-      flex-flow: column;
-      margin: 0px 40px;
-      align-items: center;
-      margin-top: 55px;
-      margin-bottom: 50px;
-   }
- 
-   .hero-section1 h1{
-      font-size: 58px;
-      margin: 0px 40px;
-      text-align: center;
-   }
-   header .carrito{
-      display: none; 
-   }
-
-   .h2shop{
-      text-align: center;
-      border-top: none;
-      margin-top: 20px;
-      border: solid steelblue;
-      border-radius: 12px;
-      background: rgb(100, 200, 150);
-      font-size: 0rem;
-   }
+  
    
- 
-    .hero-section1 img{
-       width: 370px;
-       margin-top: 50px;
-    }
- 
-    .hero-section1 a{
-       margin: 0px 40px;
-    }
- 
-    .hero-section1 p{
-       margin-bottom: 1rem;
-       text-align: center;
-    }
- 
+   /*HERO SECTION*/
+   .hero-section {
+      display: grid;
+      place-items: center;
+      position: relative;
+   .hero-section__article{
+       display: flex;
+       flex-direction: column;
+       justify-content:space-around;
+         
+      .hero-h1{
+        font-size: 3rem;
+        }
+       .hero-div{
+         position: relative;
+         font-size: 1.8rem;
+         font-weight: 400;
+         text-align: center;
+         max-width: 100%;   
+         padding-right: none;
+         width: 100%;
+         margin-bottom: 5rem;
+  
+       .hero-p{
+         display: none;
+        }
+           }
+        }
+        .hero-section__article::before{
+           width: 100%;
+           background-size:cover;
+           background-repeat: no-repeat;
+        }
+     }
     /*SHOP SECTION*/
     .shop-section{
         display: flex;
@@ -91,127 +46,282 @@
  
     .otros-productos{
        display: flex;
-       flex-direction: column;
-    }
- 
-       /*FOOTER*/
- 
-    footer p{
-    font-size: 15px;
-    text-align: center;
-    }
+         flex-direction: column;
+      }
+   
 
-    /*Page Productos*/
- 
-  .pagina-productos{
-   display: grid;
-   margin: 20px 40px;
-}
+      /*Page Productos*/
+   
+   .pagina-productos{
+      display: grid;
+      margin: 20px 40px;
+   }
 
-.cama-perros{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-}
+   .cama-perros{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+   }
+      .productos1{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+      margin: 20px 40px;
+   }
+
+      /*Page Muestrario*/
+
+   .titulo-muestrario{
+      font-size: 2rem;
+      margin-left: 3.9rem;
+      width: 70%;
+   }
+   .muestrario-section{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 1rem;
+      justify-items: center;
+   }
+    
+    /*Page Nosotros*/
+
+    .ubicacion{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      h1{
+         font-size: 2rem;
+         color: rgb(0, 0, 0);
+      }
+   }
+   .envios{
+      display: block;
+   }
+   .envios1 h3{
+      padding: 15px;
+      font-size: 2rem;
+   }
+   .envios1 p{
+      margin: 16px 20px;
+      padding: 0px;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+   }
+
  }
 
 
 
- 
  @media screen and (max-width: 768px){
- 
-    header div a{
-       font-size: 17px;
-    }
- 
- 
-    header nav {
-       display: inline-block;
-    }
-    
-    
-   header nav{
-    display: inline-block;
- }
- 
- header nav ul{
-    display: flex;
-    font-size: 11px;
- }
   
- header .carrito{
-    display: inline; 
- }
- .header{
-    .header__buscador{
-       display:none;
-    }
-   }
- 
- /*HERO SECTION*/
- 
- .hero-section{
-    display: none;
-    flex-direction: column;
-    margin: 0px 40px;
-    align-items: center;
-       img{
-         width: 0px;
+   
+      /*HERO SECTION*/
+      .hero-section {
+         display: grid;
+         place-items: center;
+         position: relative;
+      .hero-section__article{
+          display: flex;
+          flex-direction: column;
+          justify-content:space-around;
+            
+         .hero-h1{
+           font-size: 3rem;
+           }
+          .hero-div{
+            position: relative;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: center;
+            max-width: 100%;   
+            padding-right: none;
+            width: 100%;
+            margin-bottom: 5rem;
+     
+          .hero-p{
+            display: none;
+           }
+              }
+           }
+           .hero-section__article::before{
+              width: 100%;
+              background-size:cover;
+              background-repeat: no-repeat;
+           }
+        }
+       /*SHOP SECTION*/
+       .shop-section{
+           display: flex;
+           flex-direction: column;
+       }
+    
+       .otros-productos{
+          display: flex;
+            flex-direction: column;
+         }
+      
+   
+         /*Page Productos*/
+      
+      .pagina-productos{
+         display: grid;
+         margin: 20px 40px;
+      }
+   
+      .cama-perros{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+      }
+         .productos1{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         gap: 1rem;
+         margin: 20px 40px;
+      }
+   
+         /*Page Muestrario*/
+   
+      .titulo-muestrario{
+         font-size: 2rem;
+         margin-left: 3.9rem;
+         width: 70%;
+      }
+      .muestrario-section{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         gap: 1rem;
+         justify-items: center;
+      }
+       
+       /*Page Nosotros*/
+   
+       .ubicacion{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         h1{
+            font-size: 2rem;
+            color: rgb(0, 0, 0);
+         }
+      }
+      .envios{
+         display: block;
+      }
+      .envios1 h3{
+         padding: 15px;
+         font-size: 2rem;
+      }
+      .envios1 p{
+         margin: 16px 20px;
+         padding: 0px;
+         font-size: 1rem;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 800;
+      }
+   
     }
 
+    @media screen and (min-width: 1024px){
+
+      /*HERO SECTION*/
+      .hero-section {
+         display: grid;
+         place-items: center;
+         position: relative;
+      .hero-section__article{
+         display: flex;
+          flex-direction: column;
+          justify-content:center;
+          margin-top: 1rem;
+            
+         .hero-h1{
+            font-size: 6.5rem;
+           }
+          .hero-div{
+            position: relative;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: end;
+            max-width: 70%;   
+            padding-right: none;
+            width: 70%;
+            text-align: end;
+     
+          .hero-p{
+            display: flex;
+           }
+              }
+           }
+         }
+
+        /*Page Productos*/
+      
+       .pagina-productos{
+        display: grid;
+        margin: 20px 40px;
+      }
+
+      .cama-perros{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3rem;
+      }
+         
+      /*Page muestrario*/
+      
+      .materiales{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+      }
    }
  
- .hero-section1{
-    display: flex;
-    flex-flow: column;
-    margin: 0px 40px;
-    align-items: center;
-    margin-top: 55px;
-    margin-bottom: 50px;
- }
+ @media screen and (min-width: 1440px){
  
- .hero-section1 h1{
-    font-size: 58px;
-    margin: 0px 40px;
-    text-align: center;
- }
+   /*HERO SECTION*/
 
- .h2shop{
-    text-align: center;
-    border-top: none;
-    border: solid steelblue;
-    border-radius: 12px;
-    background: rgb(100, 200, 150);
-    font-size: 3rem;
- }
+   .hero-section {
+      display: grid;
+      place-items: center;
+      position: relative;
+   .hero-section__article{
+       display: flex;
+       flex-direction: column;
+       justify-content:space-around;
+         
+      .hero-h1{
+        font-size: 7rem;
+        }
+       .hero-div{
+         position: relative;
+         font-size: 1.8rem;
+         font-weight: 400;
+         text-align: end;
+         max-width: 100%;   
+         padding-right: none;
+         width: 50%;
+         align-items: end;
+  
+       .hero-p{
+         display:flex;
+        }
+           }
+        }
+        .hero-section__article::before{
+           width: 100%;
+           background-size:cover;
+           background-repeat: no-repeat;
+        }
+     }
+
+    /*SHOP SECTION*/
+    .shop-section{
+        display: flex;
+        flex-direction: column;
+    }
  
- 
-  .hero-section1 a{
-     margin: 0px 40px;
-  }
- 
-  .hero-section1 p{
-     margin-bottom: 1rem;
-     text-align: center;
-  }
- 
-  /*SHOP SECTION*/
-  .shop-section{
-      display: flex;
-      flex-direction: column;
-  }
- 
-  .otros-productos{
-     display: flex;
-     flex-direction: column;
-  }
- 
-     /*FOOTER*/
- 
-  footer p{
-  font-size: 15px;
-  text-align: center;
-  padding: 2px;
-  }
+    .otros-productos{
+       display: flex;
+         flex-direction: column;
+      }
+   
   
   /*Page Productos*/
  
@@ -222,7 +332,8 @@
  
  .cama-perros{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 3rem;
  }
  
  /*Page muestrario*/

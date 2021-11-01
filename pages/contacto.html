@@ -6,105 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactanos para resolver tus dudas y consultanos sobre lo que quieras.">
     <meta name="keywords" content="CAMAS, PERROS, GATOS, COLCHONES PARA PERROS, MASCOTAS, PENSA COMO ELLOS, ARGENTINA, CAMAS PARA GATOS, CAMAS PARA PERROS, PRODUCTOS PARA MASCOTAS">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title> Contacta con nosotros - Pensá como ellos</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
     <!-- ENCABEZADO -->
-    <header class="header">
-      <div class="header__logo">
-        <a href="../index.html"> PENSÁ COMO ELLOS</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Pensá como ellos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse class=container-sm" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="productos.html">Perros</a></li>
+                <li><a class="dropdown-item" href="productos.html">Gatos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="muestrario.html">Muestrario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
       </div>
-      <nav class="header__nav" id="navegacion">
-        <ul class="header__list">
-          <li class="header__item"><a href="productos.html">PRODUCTOS</a>
-            <ul class="header__sublist">
-            <li class="header__subitem"><a class="header__a" href="./pages/productos.html">PERROS</a></li>
-            <li class="header__subitem"><a class="header__a" href="">GATOS</a></li>
-            </ul>
-          </li>
-          <li class="header__item"><a href="muestrario.html">MUESTRARIO</a></li>
-          <li class="header__item"><a href="ubicacion.html">UBICACIÓN</a></li>
-          <li class="header__item"><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div class="header__buscador">
-       <input type="search" placeholder="Buscar productos">
-       <button class="header__buscador-boton" type="submit"><img src="../assets/search.svg" alt=""></button>
-      </div>
-     <div class="header__carrito">
-        <a href="#">
-            <img src="../assets/carrito.png" alt="mi carrito">
-        </a>
-     </div>
-   </header>
-            <main class="formulario">
-            <section class="formulario1">
-                <div>
-                  <div class="titulo-formulario"><h1>¿Tenés dudas o alguna consulta que quieras hacernos? Contactanos!</h1>
-                    <p>Consultanos por los modelos que te interesan. Indicanos la medida, color y nombre del producto para que podamos confirmar disponibilidad.</p>
-                </div>
-                <form action="" method="get">
-                <fieldset>
-                <legend><h3>Envianos tu consulta a través de un correo electrónico</legend></h3>
-                    <label for="">
-                        NOMBRE
-                    <span>*</span>
-                    </label>
-                    <input type="text" id="nombre" name="nombre" value title="Ingresá tu nombre">
-                    <label for="">
-                        EMAIL
-                    <span>*</span>
-                    </label>
-                    <input type="email" name="email" id="email" value title="Ingresá un email correcto">
-                    <label for="">
-                        TELÉFONO O CELULAR
-                        <span>*</span>
-                    </label>
-                    <input type="text" name="telefono" id="telefono" value class="input-text">
-                    <label for="">
-                        COMENTARIOS
-                    </label>
-                    <div style="float: none;">
-                    <textarea name="commment" tittle="Tu comentario" id="comment" cols="5" rows="2">
-                    </textarea>
-                    </div>
-                    </fieldset>
-                    <div>
-                    <button type="submit" tittle="submit" class="">
-                    <span> Enviar </span>
-                    </button>
-                    </div>
-                    </form>
-                    </div>
-                </section>
-               </main>
-
+        <button type="button" class="btn btn-outline-primary"><img class="img-fluid" src="../assets/carrito.png" alt=""></button>
+    </nav>
+    <!--FORMULARIO-->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6 m-5" style="border: 1px solid;">
+         <h1 class="bt-formulario"> Alguna duda? <br>Podemos ayudarte!<br></h1>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingresa tu Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tu_nombre@gmail.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ingresa algún comentario que quieras hacernos</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2 mt-4" type="button">Enviar</button>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+          
 <!--FOOTER-->
 <footer class="footer">
-  <article class="footer__article">
-   <div>
-     <p>Buscanos en nuestras redes</p>
-     <div>
-     <a href="#"><img src="../assets/facebook.png" alt="">Pensá como ellos FB</a>
-   </div>
-    <div><a href="#"><img src="../assets/instagram.png" alt="">@pensacomoellos</a></div>
-   </div>
-   <div> 
-    <p>Contactate con nosotros!</p>
-     <div>
-     <a href="#"><img src="../assets/gmail.png" alt="">pensacomoellos@gmail.com</a>
-    </div>
-    <div><a href="#"><img src="../assets/whatsapp.png" alt="">+54 1122625845</a>
-    </div>
-   </div>
-  </article>
-<article class="footer__article1">
- <div class="footer__div1">
-   <p><b>Pensá como ellos (2021) // Todos los derechos reservados. Argentina
-   </b></p>
- </div>
-</article>
+  <div class="footer-content">
+      <h3>Gracias por visitarnos!</h3>
+      <p>Si tienes preguntas para hacernos puedes escribirnos a nuestra casilla de e-mail o puedes comunicarte a través de Whatsapp. <br>También puedes seguirnos en nuestras redes sociales. <br> </p>
+      <ul class="socials">
+          <li><a href="#"><img src="/assets/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="/assets/instagram.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="/assets/gmail.png" alt="gmail"></a></li>
+          <li><a href="#"><img src="/assets/whatsapp.png" alt="whatsapp"></a></li>
+          <li><a href="#"> <img src="/assets/linkedin.png" alt="linkedin"></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy;2021 pensaComoEllos. designed by <span> @gastonnrondan</span></p>
+  </div>
 </footer>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+</body>
 </html>

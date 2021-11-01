@@ -6,9 +6,18 @@
         place-items: center;
         margin: 50px 40px;
         border: 5px solid black;
-        border-color: cornflowerblue;
-        background-color: cornflowerblue;
+        border-color: rgb(27, 27, 27);
+        background-color: rgb(23, 106, 184);
         box-shadow: 0px 10px 20px 2px #000000;
+        h1{
+           color: rgb(0, 0, 0);
+        }
+     }
+     .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
      }
      
      .ubicacion1{
@@ -19,20 +28,18 @@
      }
 
      .ubicacion1 h1{
-        font-size: 70px;
+        font-size: 5rem;
         text-align: center;
         justify-content: center;
      }
 
-     .ubicacion1 img{
-        width: 250px;
-     }
 
      .envios{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin: 0px 40px;
         place-items: center;
+        margin-bottom: 5rem;
      }
 
      .envios1{
@@ -45,7 +52,7 @@
 
      .envios1 h3{
         padding: 30px;
-        font-size: 20px;
+        font-size: 3rem;
         border: 2px solid rgb(49, 104, 255);
         border-radius: 30px;
         margin-top: 5px;
@@ -54,7 +61,7 @@
      .envios1 p{
         margin: 0px 120px;
         padding: 30px;
-        font-size: 15px;
+        font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
      }

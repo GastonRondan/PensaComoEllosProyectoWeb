@@ -1,61 +1,88 @@
  /* INICIO INDEX */
+ 
 
-/* hero section */
+/*HERO SECTION*/
 
 .hero-section {
     display: grid;
-    margin: 30px 40px;
     place-items: center;
-    background-color: rgb(133, 173, 248);
-    box-shadow: 0px 10px 20px 2px #000000;
+    position: relative;
     .hero-section__article{
        display: flex;
-       flex-flow: row nowrap;
-       justify-content: space-between;
-       align-items: center;
-       margin-top: 5px;
-       background-position: center;
-       img{
-          width: 550px;
-       }
-       h1{
-       font-size: 80px;
        flex-direction: column;
-       justify-content: space-around;
-       }
-       p{
-          font-size: 20px;
-          font-weight: 200;
-          margin-bottom: 2rem;
-       }
-       a{
-          text-decoration: none;
-          color: rgb(255, 255, 255);
-          background: rgb(13, 13, 14);
-          width:20%;
-          text-align:center;
-          padding: 4px 8px;
-       }
-    }
-    .h1-p:hover{
-       transform: scale(1.2);
-    }
- }
+       height: 100vh;
+       width: 100%;
+       align-items:center;
+       justify-content:space-around;
+       
+       .hero-h1{
+          position: relative;
+          font-size: 7rem;
+          font-weight: 800;
+          margin-left: 1rem;
+          text-align: center;
+          color: #1a191d;
+          text-shadow: 2px 3px 1px #e8ecec;
+         }
+       .hero-div{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-self: end;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: end;
+            max-width: 100%;   
+            padding-right: 4rem;
+            width: 38%;
 
-/* SHOP SECTION */
-
-.shop-section{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   margin:25px 40px;
-   .shop-section__div{
-      margin:5px 40px;
-      display: flex;
-      justify-content: center;
+            .hero-p{
+               color: #1a191d;
+               text-shadow: 2px 3px 1px #e8ecec;
+            }
+          a{
+             text-decoration: none;
+             color: rgb(255, 255, 255);
+             background: rgba(13, 13, 14, 0.89);
+             text-align:center;
+             padding: 4px 8px;
+             color: #FFFFFF;
+             text-shadow: -2px 3px 1px #212222;
+            }
+         }
+      }
+      .hero-section__article::before{
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       bottom: 0px;
+       left: 0px;
+       content: '';
+       background-color: rgb(133, 173, 248);
+       background-size: cover;
+       width: 100%;
+       background-repeat: no-repeat;
+       background: url(/assets/perro-hero.jpg);
+       height: 120vh;
+       opacity: 0.9;
+      }
    }
-   h2{
-      margin: 40px;
+   
+   /* SHOP SECTION */
+   
+   .shop-section{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin:25px 40px;
+      .shop-section__div{
+         margin:5px 40px;
+         display: flex;
+         justify-content: center;
+      }
+      h2{
+         margin: 40px;
       font-size: 35px;
+      
    }
    img{
       width: 330px;
@@ -74,6 +101,14 @@
       transform: scale(1.2);
    }
 }
+.h2shop{
+           
+          margin-top: 10rem;
+          text-align: center;
+          color: #1a191d;
+          font-weight: 800;
+          font-size: 3rem;
+}
 
 /*shop section 1*/
 
@@ -82,11 +117,12 @@
    justify-content: center;
    .shop-section1__div{
       h4{
-      background-color: rgb(156, 87, 221);
+      background-color: rgb(29, 29, 29);
       padding: 0.7rem;
       margin: 1rem;
       border: 1px solid black;
       border-radius: 8px;
+      color: whitesmoke;
       }
    }
 }
@@ -97,10 +133,13 @@
    display: grid;
    gap: 1rem;
    grid-template-columns: repeat(3,1fr);
-   margin:25px 40px;
    justify-content: space-between;
+   justify-content: center;
+   
    h2{
       border-top: 2px solid black;
+      
+      
    }
    .otros-productos__article{
       border: 1px solid black;
@@ -112,6 +151,7 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      margin: 25px 40px;
       img{
          width: 230px;
 
@@ -121,8 +161,10 @@
      .h3-p{
         display: flex;
         flex-direction: column;
+        
      }
 }
+
 
      /*ENCUENTRA MAS*/
         
@@ -134,8 +176,18 @@
       place-items: center;
       img{
          width: 180px;
+         transition-duration: 1000ms;
+
       }
       .encuentra-mas__article:hover{
          transform: scale(1.2);
+      }
+      img:hover{
+         transform:translate(200px,0px);
+         transition: all 1000ms;
+      }
+      .encuentra-mas div h3{
+         font-size: 1rem;
+
       }
    }

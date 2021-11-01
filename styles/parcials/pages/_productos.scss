@@ -18,6 +18,7 @@
                     border: 1px solid black;
                     justify-content: space-between;
                     align-items: center;
+                    padding: 9px;
                  }
               
               
@@ -29,6 +30,8 @@
               
                  .productos1{
                     display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    gap: 1rem;
                     margin: 20px 40px;
                  }
               
